@@ -11,6 +11,10 @@
   cursor: pointer;
 }
 
+.not-found__btn:hover {
+  background-color: var(--clr-blue-5);
+}
+
 .not-found__text {
   color: var(--clr-grey-1);
   font-size: 5rem;
