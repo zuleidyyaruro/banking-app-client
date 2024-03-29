@@ -1,17 +1,37 @@
 <form
   class="container h-100 d-flex justify-content-center align-items-center register"
+  [formGroup]="registerForm"
+  (ngSubmit)="onSubmit()"
 >
   <div class="w-25">
     <h1 class="h3 mb-3 sfw-normal">Register Your Account</h1>
 
-    <div class="form-floating">
+    <div class="form-floating mt-3">
       <input
         type="text"
         class="form-control"
-        id="floatingInputuser"
-        placeholder="name@example.com"
+        id="floatingInput"
+        placeholder="First Name"
+        formControlName="firstName"
+        [ngClass]="{
+          'is-invalid': submitted && registerForm.controls['firstName'].invalid
+        }"
       />
-      <label for="floatingInput">Username</label>
+      <label for="floatingInput">First Name</label>
+    </div>
+
+    <div class="form-floating mt-3">
+      <input
+        type="text"
+        class="form-control"
+        id="floatingInput"
+        placeholder="Last Name"
+        formControlName="lastName"
+        [ngClass]="{
+          'is-invalid': submitted && registerForm.controls['lastName'].invalid
+        }"
+      />
+      <label for="floatingInput">Last Name</label>
     </div>
 
     <div class="form-floating mt-3">
@@ -19,16 +39,25 @@
         type="email"
         class="form-control"
         id="floatingInput"
-        placeholder="name@example.com"
+        placeholder="email@email.com"
+        formControlName="email"
+        [ngClass]="{
+          'is-invalid': submitted && registerForm.controls['email'].invalid
+        }"
       />
       <label for="floatingInput">Email address</label>
     </div>
+
     <div class="form-floating mt-3">
       <input
         type="password"
         class="form-control"
         id="floatingPassword"
         placeholder="Password"
+        formControlName="password"
+        [ngClass]="{
+          'is-invalid': submitted && registerForm.controls['password'].invalid
+        }"
       />
       <label for="floatingPassword">Password</label>
     </div>

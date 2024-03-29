@@ -1,5 +1,8 @@
 <form
-  class="container h-100 d-flex justify-content-center align-items-center login"
+  class="container h-100 d-flex justify-content-center align-items-center loginneeds-validation"
+  novalidate
+  [formGroup]="loginForm"
+  (ngSubmit)="onSubmit()"
 >
   <div class="w-25">
     <h1 class="h3 mb-3 fw-normal text-center">Login</h1>
@@ -8,17 +11,27 @@
       <input
         type="email"
         class="form-control"
+        [ngClass]="{
+          'is-invalid': submitted && loginForm.controls['email'].invalid
+        }"
         id="floatingInput"
         placeholder="name@example.com"
+        formControlName="email"
       />
+
       <label for="floatingInput">Email address</label>
     </div>
+
     <div class="form-floating mt-3">
       <input
         type="password"
         class="form-control"
         id="floatingPassword"
         placeholder="Password"
+        formControlName="password"
+        [ngClass]="{
+          'is-invalid': submitted && loginForm.controls['password'].invalid
+        }"
       />
       <label for="floatingPassword">Password</label>
     </div>
