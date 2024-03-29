@@ -1,0 +1,14 @@
+.header {
+  background-color: var(--clr-blue-4);
+  padding: 3px;
+}
+
+.header__anchor {
+  color: var(--clr-grey-10);
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.header__anchor:hover {
+  text-decoration: underline;
+}

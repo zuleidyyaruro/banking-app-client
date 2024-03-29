@@ -1,0 +1,53 @@
+<div class="container py-5 home">
+  <div class="row align-items-center">
+    <div class="col-lg-6 text-center">
+      <img
+        src="../../../../assets/images/undraw_savings_re_eq4w.svg"
+        width="500"
+        alt="banking image"
+      />
+    </div>
+
+    <div class="col-lg-6 col-md-7">
+      <div class="mt-4">
+        <h1 class="mb-3">
+          Discover Yourg
+          <br />
+          Financial Future with Us!
+        </h1>
+        <p>
+          Launch your campaign and benefit from our expertise on designing and
+          managing conversion centered bootstrap v5 html page.
+        </p>
+        <div class="mt-4 pt-2">
+          <a routerLink="#" class="btn home__btn px-4 py-2"> Our Products </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-5 home-products">
+    <h2 class="border-bottom py-4">Featured Products</h2>
+    <div class="row">
+      <div class="row g-3">
+        <div class="col-lg-4" *ngFor="let item of products">
+          <div class="card shadow-sm home-product__card">
+            <img
+              [src]="item.image"
+              class="card-img-top"
+              alt="products"
+              height="300"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

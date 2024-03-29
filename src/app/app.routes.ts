@@ -1,3 +1,39 @@
 import { Routes } from '@angular/router';
+import { LayoutComponent } from './banking/pages/layout/layout.component';
+import { HomeComponent } from './banking/pages/home/home.component';
+import { NotFoundComponent } from './shared/pages/not-found/not-found.component';
 
-export const routes: Routes = [];
+export const routes: Routes = [
+  {
+    path: '',
+    component: LayoutComponent,
+    children: [
+      {
+        path: '',
+        redirectTo: 'home',
+        pathMatch: 'full',
+      },
+      {
+        path: 'home',
+        component: HomeComponent,
+      },
+    ],
+  },
+
+  {
+    path: 'login',
+    loadComponent: () =>
+      import('./auth/pages/login/login.component').then(
+        (component) => component.LoginComponent
+      ),
+  },
+  {
+    path: 'register',
+    loadComponent: () =>
+      import('./auth/pages/register/register.component').then(
+        (component) => component.RegisterComponent
+      ),
+  },
+  { path: '404', component: NotFoundComponent },
+  { path: '**', redirectTo: '404' },
+];

@@ -1,0 +1,16 @@
+.home__btn {
+  background-color: var(--clr-blue-4);
+  color: var(--clr-grey-10);
+}
+
+.home__btn:hover {
+  background-color: var(--clr-blue-5);
+}
+
+.home-product__card {
+  transition: transform 0.3s ease-in-out;
+}
+
+.home-product__card:hover {
+  transform: scale(0.97);
+}
