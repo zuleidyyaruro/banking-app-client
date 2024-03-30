@@ -10,59 +10,65 @@
       <input
         type="text"
         class="form-control"
-        id="floatingInput"
+        id="floatingInputFirstName"
         placeholder="First Name"
         formControlName="firstName"
         [ngClass]="{
           'is-invalid': submitted && registerForm.controls['firstName'].invalid
         }"
       />
-      <label for="floatingInput">First Name</label>
+      <label for="floatingInputFirstName">First Name</label>
+      <span class="invalid-feedback"> Write your first namel. </span>
     </div>
 
     <div class="form-floating mt-3">
       <input
         type="text"
         class="form-control"
-        id="floatingInput"
+        id="floatingInputLastName"
         placeholder="Last Name"
         formControlName="lastName"
         [ngClass]="{
           'is-invalid': submitted && registerForm.controls['lastName'].invalid
         }"
       />
-      <label for="floatingInput">Last Name</label>
+      <label for="floatingInputLastName">Last Name</label>
+      <span class="invalid-feedback"> Write your last namel. </span>
     </div>
 
     <div class="form-floating mt-3">
       <input
         type="email"
         class="form-control"
-        id="floatingInput"
+        id="floatingInputEmail"
         placeholder="email@email.com"
         formControlName="email"
         [ngClass]="{
           'is-invalid': submitted && registerForm.controls['email'].invalid
         }"
       />
-      <label for="floatingInput">Email address</label>
+      <label for="floatingInputEmail">Email address</label>
+      <span class="invalid-feedback"> Write a valid name. </span>
     </div>
 
     <div class="form-floating mt-3">
       <input
         type="password"
         class="form-control"
-        id="floatingPassword"
+        id="floatingPasswordPassword"
         placeholder="Password"
         formControlName="password"
         [ngClass]="{
           'is-invalid': submitted && registerForm.controls['password'].invalid
         }"
       />
-      <label for="floatingPassword">Password</label>
+      <label for="floatingPasswordPassword">Password</label>
+      <span class="invalid-feedback">
+        Expected string length greater or equal to 8.
+      </span>
     </div>
     <button class="btn register__btn w-100 py-2 mt-3" type="submit">
-      Sign in
+      Register
     </button>
     <a routerLink="/home" class="btn btn-primary w-100 py-2 mt-3">
       Go Back Home

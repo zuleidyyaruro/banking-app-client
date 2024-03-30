@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 import { LayoutComponent } from './banking/pages/layout/layout.component';
 import { HomeComponent } from './banking/pages/home/home.component';
 import { NotFoundComponent } from './shared/pages/not-found/not-found.component';
+import { DashboardComponent } from './banking/pages/dashboard/dashboard.component';
 
 export const routes: Routes = [
   {
@@ -16,6 +17,10 @@ export const routes: Routes = [
       {
         path: 'home',
         component: HomeComponent,
+      },
+      {
+        path: 'dashboard',
+        component: DashboardComponent,
       },
     ],
   },

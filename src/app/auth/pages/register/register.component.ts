@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, TemplateRef, inject } from '@angular/core';
 import {
   FormBuilder,
   FormGroup,
@@ -7,11 +7,14 @@ import {
   Validators,
 } from '@angular/forms';
 import { RouterLink } from '@angular/router';
+import { AuthService } from '../../services/auth.service';
+import { NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-register',
   standalone: true,
-  imports: [RouterLink, ReactiveFormsModule, CommonModule],
+  imports: [RouterLink, ReactiveFormsModule, CommonModule, NgbTooltipModule],
   templateUrl: './register.component.html',
   styleUrl: './register.component.css',
 })
@@ -19,7 +22,10 @@ export class RegisterComponent {
   public registerForm!: FormGroup;
   public submitted: boolean = false;
 
-  constructor(private formBuilder: FormBuilder) {}
+  constructor(
+    private formBuilder: FormBuilder,
+    private authService: AuthService
+  ) {}
 
   ngOnInit(): void {
     this.registerForm = this.formBuilder.group({
@@ -35,5 +41,27 @@ export class RegisterComponent {
     if (this.registerForm.invalid) {
       return;
     }
+
+    this.authService.register(this.registerForm.value).subscribe({
+      next: (response) => {
+        localStorage.setItem('token', response.accessToken);
+        Swal.fire({
+          title: 'Created user successfully!',
+          timer: 1500,
+          timerProgressBar: true,
+          icon: 'error',
+          showConfirmButton: false,
+        });
+      },
+      error: ({ error }) => {
+        Swal.fire({
+          title: error.title,
+          timer: 1500,
+          timerProgressBar: true,
+          icon: 'error',
+          showConfirmButton: false,
+        });
+      },
+    });
   }
 }
