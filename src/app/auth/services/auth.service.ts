@@ -5,8 +5,9 @@ import {
   LoginUser,
   RegisterUser,
 } from '../../interfaces/auth.interface';
-import { Observable } from 'rxjs';
+import { Observable, lastValueFrom } from 'rxjs';
 import { environment } from '../../../environments/environment.local';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root',
@@ -14,7 +15,7 @@ import { environment } from '../../../environments/environment.local';
 export class AuthService {
   protected readonly URL = environment.backendUrl;
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private router: Router) {}
 
   register(data: RegisterUser): Observable<AuthUserResponse> {
     return this.http.post<AuthUserResponse>(this.URL + 'signup', data);
@@ -22,5 +23,10 @@ export class AuthService {
 
   login(data: LoginUser): Observable<AuthUserResponse> {
     return this.http.post<AuthUserResponse>(this.URL + 'signin', data);
+  }
+
+  isLogedIn() {
+    const token = localStorage.getItem('access-token');
+    return !!token;
   }
 }

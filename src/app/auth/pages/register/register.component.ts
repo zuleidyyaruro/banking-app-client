@@ -44,7 +44,7 @@ export class RegisterComponent {
 
     this.authService.register(this.registerForm.value).subscribe({
       next: (response) => {
-        localStorage.setItem('token', response.accessToken);
+        localStorage.setItem('access-token', response.accessToken);
         Swal.fire({
           title: 'Created user successfully!',
           timer: 1500,

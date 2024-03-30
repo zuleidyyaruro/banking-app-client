@@ -43,12 +43,12 @@ export class LoginComponent {
 
     this.authService.login(this.loginForm.value).subscribe({
       next: (response) => {
-        localStorage.setItem('token', response.accessToken);
+        localStorage.setItem('access-token', response.accessToken);
         this.router.navigate(['/dashboard']);
         console.log('User logged in successfully!');
       },
       error: ({ error }) => {
-        console.error(error.title);
+        localStorage.setItem('access-token', '');
       },
     });
   }
