@@ -1,7 +1,85 @@
-# AppBankingClient
+<h1 align="center">App Banking Client</h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.2.
+<!-- TABLE OF CONTENTS -->
 
-## Development server
+## Table of Contents
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Overview](#overview)
+- [Built With](#built-with)
+- [Features](#features)
+- [How to use](#how-to-use)
+- [Contact](#contact)
+
+<!-- OVERVIEW -->
+
+## Overview
+
+1. Home
+   ![screenshot](https://raw.githubusercontent.com/zuleidyyaruro/banking-app-client/main/src/assets/captures/screencapture-home.png)
+
+2. About
+   ![screenshot](https://raw.githubusercontent.com/zuleidyyaruro/banking-app-client/main/src/assets/captures/screencapture-about.png)
+
+3. Login
+   ![screenshot](<https://raw.githubusercontent.com/zuleidyyaruro/banking-app-client/main/src/assets/captures/screencapture-login%20(2).png>)
+
+4. Register
+   ![screenshot](https://raw.githubusercontent.com/zuleidyyaruro/banking-app-client/main/src/assets/captures/screencapture-register.png)
+
+5. Dashboard
+   ![screenshot](https://raw.githubusercontent.com/zuleidyyaruro/banking-app-client/main/src/assets/captures/screencapture-dashboard.png)
+
+6. Accounts
+   ![screenshot](https://raw.githubusercontent.com/zuleidyyaruro/banking-app-client/main/src/assets/captures/screencapture-accounts.png)
+
+7. Profile
+   ![screenshot](https://raw.githubusercontent.com/zuleidyyaruro/banking-app-client/main/src/assets/captures/screencapture-profile.png)
+
+8. Transactions
+   ![screenshot](https://raw.githubusercontent.com/zuleidyyaruro/banking-app-client/main/src/assets/captures/screencapture-transactions.png)
+
+Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
+
+- Where can I see your demo?
+- What was your experience?
+- What have you learned/improved?
+- Your wisdom? :)
+
+### Built With
+
+<!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
+
+- [Angular 17](https://angular.io/guide/update-to-version-17)
+- [Bootstrap](https://getbootstrap.com/) -[SweetAlert](https://sweetalert2.github.io/)
+
+## Features
+
+<!-- List the features of your application or follow the template. Don't share the figma file here :) -->
+
+This application/site was developed as an assignment to pass the 'Angular Workshop' course provided by Bancolombia, the company where I currently work.
+
+The idea is to create an Angular application that simulates a banking application, where users can see their Transactions, Accounts, Profile and a Main Panel (Dashboard) where the user can see an overview of their account. Additionally, the app must provide login and registration.
+
+Additionally, it must be possible to navigate to all the different sections of the application.
+
+## How To Use
+
+<!-- Example: -->
+
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+
+```bash
+# Clone this repository
+$ git clone https://github.com/zuleidyyaruro/banking-app-client.git
+
+# Install dependencies
+$ npm install
+
+# Run the app
+$ npm start
+```
+
+## Contact
+
+- Linkedin [zuleidyyaruroorozco/](https://www.linkedin.com/in/zuleidyyaruroorozco/)
+- GitHub [zuleidyyaruro](https://github.com/zuleidyyaruro)
