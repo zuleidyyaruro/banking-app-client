@@ -14,47 +14,37 @@
 
 ## Overview
 
-1. Home
-   ![screenshot](https://raw.githubusercontent.com/zuleidyyaruro/banking-app-client/main/src/assets/captures/screencapture-home.png)
+** 1. Home **
 
-2. About
-   ![screenshot](https://raw.githubusercontent.com/zuleidyyaruro/banking-app-client/main/src/assets/captures/screencapture-about.png)
+![screenshot](https://raw.githubusercontent.com/zuleidyyaruro/banking-app-client/main/src/assets/captures/screencapture-home.png)
 
-3. Login
-   ![screenshot](<https://raw.githubusercontent.com/zuleidyyaruro/banking-app-client/main/src/assets/captures/screencapture-login%20(2).png>)
+** 2. About **
+![screenshot](https://raw.githubusercontent.com/zuleidyyaruro/banking-app-client/main/src/assets/captures/screencapture-about.png)
 
-4. Register
-   ![screenshot](https://raw.githubusercontent.com/zuleidyyaruro/banking-app-client/main/src/assets/captures/screencapture-register.png)
+** 3. Login **
+![screenshot](<https://raw.githubusercontent.com/zuleidyyaruro/banking-app-client/main/src/assets/captures/screencapture-login%20(2).png>)
 
-5. Dashboard
-   ![screenshot](https://raw.githubusercontent.com/zuleidyyaruro/banking-app-client/main/src/assets/captures/screencapture-dashboard.png)
+** 4. Register **
+![screenshot](https://raw.githubusercontent.com/zuleidyyaruro/banking-app-client/main/src/assets/captures/screencapture-register.png)
 
-6. Accounts
-   ![screenshot](https://raw.githubusercontent.com/zuleidyyaruro/banking-app-client/main/src/assets/captures/screencapture-accounts.png)
+** 5. Dashboard **
+![screenshot](https://raw.githubusercontent.com/zuleidyyaruro/banking-app-client/main/src/assets/captures/screencapture-dashboard.png)
 
-7. Profile
-   ![screenshot](https://raw.githubusercontent.com/zuleidyyaruro/banking-app-client/main/src/assets/captures/screencapture-profile.png)
+** 6. Accounts **
+![screenshot](https://raw.githubusercontent.com/zuleidyyaruro/banking-app-client/main/src/assets/captures/screencapture-accounts.png)
 
-8. Transactions
-   ![screenshot](https://raw.githubusercontent.com/zuleidyyaruro/banking-app-client/main/src/assets/captures/screencapture-transactions.png)
+** 7. Profile **
+![screenshot](https://raw.githubusercontent.com/zuleidyyaruro/banking-app-client/main/src/assets/captures/screencapture-profile.png)
 
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
-
-- Where can I see your demo?
-- What was your experience?
-- What have you learned/improved?
-- Your wisdom? :)
+** 8. Transactions **
+![screenshot](https://raw.githubusercontent.com/zuleidyyaruro/banking-app-client/main/src/assets/captures/screencapture-transactions.png)
 
 ### Built With
-
-<!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
 - [Angular 17](https://angular.io/guide/update-to-version-17)
 - [Bootstrap](https://getbootstrap.com/) -[SweetAlert](https://sweetalert2.github.io/)
 
 ## Features
-
-<!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
 This application/site was developed as an assignment to pass the 'Angular Workshop' course provided by Bancolombia, the company where I currently work.
 
@@ -64,18 +54,13 @@ Additionally, it must be possible to navigate to all the different sections of t
 
 ## How To Use
 
-<!-- Example: -->
-
 To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
 
 ```bash
-# Clone this repository
 $ git clone https://github.com/zuleidyyaruro/banking-app-client.git
 
-# Install dependencies
 $ npm install
 
-# Run the app
 $ npm start
 ```
 
