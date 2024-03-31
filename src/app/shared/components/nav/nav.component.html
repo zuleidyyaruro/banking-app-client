@@ -3,12 +3,47 @@
     <a routerLink="/home" class="navbar-brand d-flex align-items-center">
       <strong class="title">MY BANK</strong>
     </a>
-    <div class="navbar__options">
+    <div class="navbar__options d-flex align-items-center">
       <a routerLink="/home" class="navbar__anchor mx-2 text-decoration-none">
         Home
       </a>
       <a href="#" class="navbar__anchor mx-2 text-decoration-none">Products</a>
       <a href="#" class="navbar__anchor mx-2 text-decoration-none">About</a>
+
+      <div
+        ngbDropdown
+        class="dropdown"
+        *ngIf="dataProfile && emptyDataProfile(dataProfile)"
+      >
+        <button
+          ngbDropdownToggle
+          class="btn btn-primary"
+          type="button"
+          id="dropdownMenuButton1"
+          aria-expanded="false"
+          style="
+            --bs-btn-padding-y: 0.25rem;
+            --bs-btn-padding-x: 0.5rem;
+            --bs-btn-font-size: 0.85rem;
+          "
+        >
+          User options
+        </button>
+        <ul ngbDropdownMenu aria-labelledby="dropdownMenuButton1">
+          <li>
+            <a ngbDropdownItem href="#" routerLink="dashboard">Dashboard</a>
+          </li>
+          <li>
+            <a ngbDropdownItem href="#" routerLink="accounts">Accounts</a>
+          </li>
+          <li><a ngbDropdownItem href="#" routerLink="profile">Profile</a></li>
+          <li>
+            <a ngbDropdownItem href="#" routerLink="transactions"
+              >Transactions</a
+            >
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </nav>

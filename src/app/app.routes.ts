@@ -4,6 +4,9 @@ import { HomeComponent } from './banking/pages/home/home.component';
 import { NotFoundComponent } from './shared/pages/not-found/not-found.component';
 import { DashboardComponent } from './banking/pages/dashboard/dashboard.component';
 import { authGuard } from './auth/utils/auth-guard';
+import { AccountsComponent } from './banking/pages/accounts/accounts.component';
+import { ProfileComponent } from './banking/pages/profile/profile.component';
+import { TransactionsComponent } from './banking/pages/transactions/transactions.component';
 
 export const routes: Routes = [
   {
@@ -23,6 +26,21 @@ export const routes: Routes = [
       {
         path: 'dashboard',
         component: DashboardComponent,
+        canActivate: [authGuard],
+      },
+      {
+        path: 'accounts',
+        component: AccountsComponent,
+        canActivate: [authGuard],
+      },
+      {
+        path: 'profile',
+        component: ProfileComponent,
+        canActivate: [authGuard],
+      },
+      {
+        path: 'transactions',
+        component: TransactionsComponent,
         canActivate: [authGuard],
       },
     ],

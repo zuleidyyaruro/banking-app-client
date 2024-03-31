@@ -29,7 +29,6 @@ export class HeaderComponent {
       next: (data) => {
         this.dataProfile = data;
         this.profileBehaviorService.setProfile(this.dataProfile);
-        console.log(this.dataProfile);
       },
       error: (error) => {
         console.error(error);
