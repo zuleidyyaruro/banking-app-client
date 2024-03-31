@@ -3,11 +3,12 @@ import { Profile } from '../../interfaces/profile.interface';
 import { ProfileBehaviorService } from '../../../shared/services/profile-behavior.service';
 import { TransactionsService } from '../../services/transactions.service';
 import { Transaction } from '../../interfaces/transaction.interface';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-dashboard',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.css',
 })
