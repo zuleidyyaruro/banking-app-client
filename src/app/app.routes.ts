@@ -7,6 +7,7 @@ import { authGuard } from './auth/utils/auth-guard';
 import { AccountsComponent } from './banking/pages/accounts/accounts.component';
 import { ProfileComponent } from './banking/pages/profile/profile.component';
 import { TransactionsComponent } from './banking/pages/transactions/transactions.component';
+import { AboutComponent } from './banking/pages/about/about.component';
 
 export const routes: Routes = [
   {
@@ -42,6 +43,10 @@ export const routes: Routes = [
         path: 'transactions',
         component: TransactionsComponent,
         canActivate: [authGuard],
+      },
+      {
+        path: 'about',
+        component: AboutComponent,
       },
     ],
   },
