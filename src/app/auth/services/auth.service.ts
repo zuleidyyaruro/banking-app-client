@@ -4,7 +4,7 @@ import {
   AuthUserResponse,
   LoginUser,
   RegisterUser,
-} from '../../interfaces/auth.interface';
+} from '../interfaces/auth.interface';
 import { Observable, lastValueFrom } from 'rxjs';
 import { environment } from '../../../environments/environment.local';
 import { Router } from '@angular/router';

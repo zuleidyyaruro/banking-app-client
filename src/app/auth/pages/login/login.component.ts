@@ -65,6 +65,8 @@ export class LoginComponent {
           icon: 'error',
           showConfirmButton: false,
         });
+        this.loginForm.reset();
+        this.submitted = false;
       },
     });
   }

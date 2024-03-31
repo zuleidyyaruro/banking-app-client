@@ -1,6 +1,28 @@
 <header class="header">
   <div class="d-flex justify-content-end container">
-    <a class="mx-2 header__anchor" routerLink="/login"> Login</a>
-    <a class="header__anchor mx-2" routerLink="/register"> Create Account </a>
+    <a
+      class="mx-2 header__anchor"
+      routerLink="/login"
+      *ngIf="!dataProfile; else authenticatedLogin"
+    >
+      Login</a
+    >
+    <ng-template #authenticatedLogin>
+      <span class="mx-2 header__anchor"
+        >Hello, {{ dataProfile.firstName }}</span
+      >
+    </ng-template>
+
+    <a
+      class="header__anchor mx-2"
+      routerLink="/register"
+      *ngIf="!dataProfile; else authenticatedRegister"
+    >
+      Create Account
+    </a>
+
+    <ng-template #authenticatedRegister>
+      <span class="badge rounded-pill text-bg-light">Logout</span>
+    </ng-template>
   </div>
 </header>
