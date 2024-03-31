@@ -9,6 +9,7 @@ import {
 import { RouterLink } from '@angular/router';
 import { AuthService } from '../../services/auth.service';
 import { Router } from '@angular/router';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-login',
@@ -44,11 +45,26 @@ export class LoginComponent {
     this.authService.login(this.loginForm.value).subscribe({
       next: (response) => {
         localStorage.setItem('access-token', response.accessToken);
-        this.router.navigate(['/dashboard']);
-        console.log('User logged in successfully!');
+        Swal.fire({
+          title: 'Successfully authenticated user!',
+          timer: 1500,
+          timerProgressBar: true,
+          icon: 'success',
+          showConfirmButton: false,
+        });
+        setTimeout(() => {
+          this.router.navigate(['/dashboard']);
+        }, 1500);
       },
       error: ({ error }) => {
         localStorage.setItem('access-token', '');
+        Swal.fire({
+          title: 'Incorrect username or password',
+          timer: 1500,
+          timerProgressBar: true,
+          icon: 'error',
+          showConfirmButton: false,
+        });
       },
     });
   }

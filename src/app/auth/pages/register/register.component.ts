@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, TemplateRef, inject } from '@angular/core';
+import { Component } from '@angular/core';
 import {
   FormBuilder,
   FormGroup,
@@ -46,7 +46,7 @@ export class RegisterComponent {
       next: (response) => {
         localStorage.setItem('access-token', response.accessToken);
         Swal.fire({
-          title: 'Created user successfully!',
+          title: 'Successfully created user !',
           timer: 1500,
           timerProgressBar: true,
           icon: 'error',
