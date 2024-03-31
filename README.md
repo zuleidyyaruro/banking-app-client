@@ -14,35 +14,42 @@
 
 ## Overview
 
-** 1. Home **
+**1. Home**
 
 ![screenshot](https://raw.githubusercontent.com/zuleidyyaruro/banking-app-client/main/src/assets/captures/screencapture-home.png)
 
-** 2. About **
+**2. About**
+
 ![screenshot](https://raw.githubusercontent.com/zuleidyyaruro/banking-app-client/main/src/assets/captures/screencapture-about.png)
 
-** 3. Login **
+**3. Login**
+
 ![screenshot](<https://raw.githubusercontent.com/zuleidyyaruro/banking-app-client/main/src/assets/captures/screencapture-login%20(2).png>)
 
-** 4. Register **
+**4. Register**
+
 ![screenshot](https://raw.githubusercontent.com/zuleidyyaruro/banking-app-client/main/src/assets/captures/screencapture-register.png)
 
-** 5. Dashboard **
+**5. Dashboard**
+
 ![screenshot](https://raw.githubusercontent.com/zuleidyyaruro/banking-app-client/main/src/assets/captures/screencapture-dashboard.png)
 
-** 6. Accounts **
+**6. Accounts**
+
 ![screenshot](https://raw.githubusercontent.com/zuleidyyaruro/banking-app-client/main/src/assets/captures/screencapture-accounts.png)
 
-** 7. Profile **
+**7. Profile**
+
 ![screenshot](https://raw.githubusercontent.com/zuleidyyaruro/banking-app-client/main/src/assets/captures/screencapture-profile.png)
 
-** 8. Transactions **
+**8. Transactions**
 ![screenshot](https://raw.githubusercontent.com/zuleidyyaruro/banking-app-client/main/src/assets/captures/screencapture-transactions.png)
 
 ### Built With
 
 - [Angular 17](https://angular.io/guide/update-to-version-17)
-- [Bootstrap](https://getbootstrap.com/) -[SweetAlert](https://sweetalert2.github.io/)
+- [Bootstrap](https://getbootstrap.com/)
+- [SweetAlert](https://sweetalert2.github.io/)
 
 ## Features
 
