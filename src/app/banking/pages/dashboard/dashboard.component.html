@@ -1,1 +1,27 @@
-<p>dashboard works!</p>
+<h4 class="text-center mt-3">Your dashboard</h4>
+
+<div class="container mt-5 d-flex justify-content-center gap-5">
+  <div class="card col-lg-3">
+    <div class="card-body bg-success p-2 text-white">
+      <h5 class="card-title">Transactions amount</h5>
+      <p class="card-text">{{ transactionAmount }}</p>
+    </div>
+    <div class="card-footer bg-success p-2 text-white bg-opacity-75 p-3"></div>
+  </div>
+
+  <div class="card col-lg-3">
+    <div class="card-body p-2 bg-info">
+      <h5 class="card-title">Transaction balance</h5>
+      <p class="card-text">{{ transactionBalance }}</p>
+    </div>
+    <div class="card-footer bg-info bg-opacity-75 border-0 p-3"></div>
+  </div>
+
+  <div class="card col-lg-3">
+    <div class="card-body bg-warning">
+      <h5 class="card-title">Accounts</h5>
+      <p class="card-text">Accounts</p>
+    </div>
+    <div class="card-footer bg-warning bg-opacity-75 border-0 p-3"></div>
+  </div>
+</div>
